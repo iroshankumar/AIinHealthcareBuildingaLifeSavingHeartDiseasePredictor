@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>85b5baa62b704a1b8c9252dfaa8884cd</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="project-4-heart-disease-prediction-classification-"
+class="cell markdown" id="intro_markdown">
+<h1>Project 4: Heart Disease Prediction (Classification) 🩺</h1>
+<p><strong>Project Objective:</strong> To build a machine learning model
+that can accurately predict whether a patient has heart disease based on
+a set of medical attributes. This project will serve as a comprehensive
+introduction to classification, one of the most common types of machine
+learning problems.</p>
+<h3 id="core-concepts-well-cover">Core Concepts We'll Cover:</h3>
+<ol>
+<li><strong>Classification Fundamentals:</strong> Understanding the goal
+of predicting a discrete category.</li>
+<li><strong>Exploratory Data Analysis (EDA) for Classification:</strong>
+Analyzing features to find patterns that distinguish between
+classes.</li>
+<li><strong>Data Preprocessing:</strong> Preparing data for
+classification models using encoding and feature scaling.</li>
+<li><strong>Model Building:</strong> Training and comparing a simple
+baseline model (Logistic Regression) with an advanced ensemble model
+(Random Forest).</li>
+<li><strong>Model Evaluation:</strong> Mastering key classification
+metrics like Accuracy, Precision, Recall, F1-Score, and interpreting the
+Confusion Matrix.</li>
+<li><strong>Feature Importance:</strong> Identifying the most
+influential medical factors for predicting heart disease.</li>
+</ol>
+</section>
+<section id="theoretical-concept-what-is-classification"
+class="cell markdown" id="theory_classification">
+<h3><strong>Theoretical Concept: What is Classification?</strong></h3>
+<p>Classification is a type of supervised machine learning task where
+the goal is to predict a <strong>discrete category or class
+label</strong>. This is different from regression, where we predict a
+continuous numerical value.</p>
+<p><strong>Classification vs. Regression:</strong></p>
+<ul>
+<li><strong>Classification:</strong> Is this email spam or not spam?
+(Two classes)</li>
+<li><strong>Regression:</strong> What will be the price of this house?
+(Continuous value)</li>
+</ul>
+<p>In this project, our goal is to predict one of two classes for a
+patient: <code>0</code> (No Heart Disease) or <code>1</code> (Has Heart
+Disease). This is a <strong>binary classification</strong> problem.</p>
+</section>
+<section id="step-1-setup---importing-libraries-and-loading-data"
+class="cell markdown" id="setup_markdown">
+<h3>Step 1: Setup - Importing Libraries and Loading Data</h3>
+</section>
+<div class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install kagglehub</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Collecting kagglehub
+  Downloading kagglehub-0.3.13-py3-none-any.whl.metadata (38 kB)
+Requirement already satisfied: packaging in /opt/anaconda3/lib/python3.13/site-packages (from kagglehub) (24.2)
+Requirement already satisfied: pyyaml in /opt/anaconda3/lib/python3.13/site-packages (from kagglehub) (6.0.2)
+Requirement already satisfied: requests in /opt/anaconda3/lib/python3.13/site-packages (from kagglehub) (2.32.3)
+Requirement already satisfied: tqdm in /opt/anaconda3/lib/python3.13/site-packages (from kagglehub) (4.67.1)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/anaconda3/lib/python3.13/site-packages (from requests-&gt;kagglehub) (3.3.2)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/anaconda3/lib/python3.13/site-packages (from requests-&gt;kagglehub) (3.7)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/anaconda3/lib/python3.13/site-packages (from requests-&gt;kagglehub) (2.3.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/anaconda3/lib/python3.13/site-packages (from requests-&gt;kagglehub) (2025.10.5)
+Downloading kagglehub-0.3.13-py3-none-any.whl (68 kB)
+Installing collected packages: kagglehub
+Successfully installed kagglehub-0.3.13
+Note: you may need to restart the kernel to use updated packages.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="2" id="setup_code">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> kagglehub</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, OneHotEncoder</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, confusion_matrix, classification_report, precision_score, recall_score, f1_score</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Set plot style</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">&#39;whitegrid&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/opt/anaconda3/lib/python3.13/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:276}"
+data-executionInfo="{&quot;elapsed&quot;:4327,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599764656,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="load_data_code"
+data-outputId="25101a5e-dae2-4a32-c7d9-ec604d966cd5">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the dataset using the Kaggle Hub API</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Downloading dataset...&quot;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> kagglehub.dataset_download(<span class="st">&quot;redwankarimsony/heart-disease-data&quot;</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset from the downloaded path</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="ss">f&#39;</span><span class="sc">{</span>path<span class="sc">}</span><span class="ss">/heart_disease_uci.csv&#39;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Dataset downloaded and loaded successfully.&quot;</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Data shape: </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Downloading dataset...
+Downloading from https://www.kaggle.com/api/v1/datasets/download/redwankarimsony/heart-disease-data?dataset_version_number=6...
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>100%|██████████████████████████████████████| 12.4k/12.4k [00:00&lt;00:00, 6.46MB/s]</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Extracting files...
+Dataset downloaded and loaded successfully.
+Data shape: (920, 16)
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>dataset</th>
+      <th>cp</th>
+      <th>trestbps</th>
+      <th>chol</th>
+      <th>fbs</th>
+      <th>restecg</th>
+      <th>thalch</th>
+      <th>exang</th>
+      <th>oldpeak</th>
+      <th>slope</th>
+      <th>ca</th>
+      <th>thal</th>
+      <th>num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>63</td>
+      <td>Male</td>
+      <td>Cleveland</td>
+      <td>typical angina</td>
+      <td>145.0</td>
+      <td>233.0</td>
+      <td>True</td>
+      <td>lv hypertrophy</td>
+      <td>150.0</td>
+      <td>False</td>
+      <td>2.3</td>
+      <td>downsloping</td>
+      <td>0.0</td>
+      <td>fixed defect</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>67</td>
+      <td>Male</td>
+      <td>Cleveland</td>
+      <td>asymptomatic</td>
+      <td>160.0</td>
+      <td>286.0</td>
+      <td>False</td>
+      <td>lv hypertrophy</td>
+      <td>108.0</td>
+      <td>True</td>
+      <td>1.5</td>
+      <td>flat</td>
+      <td>3.0</td>
+      <td>normal</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>67</td>
+      <td>Male</td>
+      <td>Cleveland</td>
+      <td>asymptomatic</td>
+      <td>120.0</td>
+      <td>229.0</td>
+      <td>False</td>
+      <td>lv hypertrophy</td>
+      <td>129.0</td>
+      <td>True</td>
+      <td>2.6</td>
+      <td>flat</td>
+      <td>2.0</td>
+      <td>reversable defect</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>37</td>
+      <td>Male</td>
+      <td>Cleveland</td>
+      <td>non-anginal</td>
+      <td>130.0</td>
+      <td>250.0</td>
+      <td>False</td>
+      <td>normal</td>
+      <td>187.0</td>
+      <td>False</td>
+      <td>3.5</td>
+      <td>downsloping</td>
+      <td>0.0</td>
+      <td>normal</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>41</td>
+      <td>Female</td>
+      <td>Cleveland</td>
+      <td>atypical angina</td>
+      <td>130.0</td>
+      <td>204.0</td>
+      <td>False</td>
+      <td>lv hypertrophy</td>
+      <td>172.0</td>
+      <td>False</td>
+      <td>1.4</td>
+      <td>upsloping</td>
+      <td>0.0</td>
+      <td>normal</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="step-2-exploratory-data-analysis-eda" class="cell markdown"
+id="eda_markdown">
+<h3>Step 2: Exploratory Data Analysis (EDA)</h3>
+<p>Before building any models, we need to understand our data deeply.
+We'll look at the distribution of our target variable, the
+characteristics of our features, and how they relate to the presence of
+heart disease.</p>
+</section>
+<div class="cell code" data-execution_count="4"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:38,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599765017,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="initial_inspection_code"
+data-outputId="4ca5a903-67c8-4068-f4b9-54b6c84c7b59">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initial inspection</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Dataset Information:&quot;</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df.info()</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Descriptive Statistics:&quot;</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Missing Values:&quot;</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.isna().<span class="bu">sum</span>().<span class="bu">sum</span>())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Dataset Information:
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 920 entries, 0 to 919
+Data columns (total 16 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   id        920 non-null    int64  
+ 1   age       920 non-null    int64  
+ 2   sex       920 non-null    object 
+ 3   dataset   920 non-null    object 
+ 4   cp        920 non-null    object 
+ 5   trestbps  861 non-null    float64
+ 6   chol      890 non-null    float64
+ 7   fbs       830 non-null    object 
+ 8   restecg   918 non-null    object 
+ 9   thalch    865 non-null    float64
+ 10  exang     865 non-null    object 
+ 11  oldpeak   858 non-null    float64
+ 12  slope     611 non-null    object 
+ 13  ca        309 non-null    float64
+ 14  thal      434 non-null    object 
+ 15  num       920 non-null    int64  
+dtypes: float64(5), int64(3), object(8)
+memory usage: 115.1+ KB
+
+Descriptive Statistics:
+               id         age    trestbps        chol      thalch     oldpeak  \
+count  920.000000  920.000000  861.000000  890.000000  865.000000  858.000000   
+mean   460.500000   53.510870  132.132404  199.130337  137.545665    0.878788   
+std    265.725422    9.424685   19.066070  110.780810   25.926276    1.091226   
+min      1.000000   28.000000    0.000000    0.000000   60.000000   -2.600000   
+25%    230.750000   47.000000  120.000000  175.000000  120.000000    0.000000   
+50%    460.500000   54.000000  130.000000  223.000000  140.000000    0.500000   
+75%    690.250000   60.000000  140.000000  268.000000  157.000000    1.500000   
+max    920.000000   77.000000  200.000000  603.000000  202.000000    6.200000   
+
+               ca         num  
+count  309.000000  920.000000  
+mean     0.676375    0.995652  
+std      0.935653    1.142693  
+min      0.000000    0.000000  
+25%      0.000000    0.000000  
+50%      0.000000    1.000000  
+75%      1.000000    2.000000  
+max      3.000000    4.000000  
+
+Missing Values:
+1759
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="5"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:586}"
+data-executionInfo="{&quot;elapsed&quot;:24,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599767892,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="c89E71xZgWnD" data-outputId="aaee826d-8f35-4c31-8536-75195a481956">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>id            0
+age           0
+sex           0
+dataset       0
+cp            0
+trestbps     59
+chol         30
+fbs          90
+restecg       2
+thalch       55
+exang        55
+oldpeak      62
+slope       309
+ca          611
+thal        486
+num           0
+dtype: int64</code></pre>
+</div>
+</div>
+<section id="21-analyzing-the-target-variable" class="cell markdown"
+id="target_analysis_markdown">
+<h4>2.1 Analyzing the Target Variable</h4>
+<p>Let's see the distribution of patients with and without heart
+disease.</p>
+</section>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+data-executionInfo="{&quot;elapsed&quot;:747,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599770150,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="target_analysis_code"
+data-outputId="2d84e9a0-5fac-4c32-a0d1-457b76a5ad7f">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span><span class="st">&#39;num&#39;</span>, data<span class="op">=</span>df, palette<span class="op">=</span><span class="st">&#39;viridis&#39;</span>, hue<span class="op">=</span><span class="st">&#39;num&#39;</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Distribution of Heart Disease (1 = Disease, 0 = No Disease)&#39;</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Target&#39;</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Count&#39;</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_add7b0b1acaa47e0933e9cbf93f50950/b9f2c5fafe1dafa6c57c29ba7a4eff44d434ca42.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="target_analysis_summary">
+<p><strong>Insight:</strong> The dataset is fairly balanced, with a
+slightly higher number of patients having heart disease. This is good
+because it means our model will have a similar number of examples for
+both classes to learn from, and accuracy will be a meaningful
+metric.</p>
+</div>
+<section id="22-analyzing-features-vs-target" class="cell markdown"
+id="feature_analysis_markdown">
+<h4>2.2 Analyzing Features vs. Target</h4>
+</section>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+data-executionInfo="{&quot;elapsed&quot;:2015,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599773442,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="feature_analysis_code"
+data-outputId="00050dd7-a468-4c98-ca7f-a024c848ad21">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let&#39;s visualize the relationship between key features and the target</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">18</span>, <span class="dv">14</span>))</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Key Features vs. Heart Disease&#39;</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Age vs. Target</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>sns.histplot(ax<span class="op">=</span>axes[<span class="dv">0</span>, <span class="dv">0</span>], data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;age&#39;</span>, hue<span class="op">=</span><span class="st">&#39;num&#39;</span>, multiple<span class="op">=</span><span class="st">&#39;stack&#39;</span>, palette<span class="op">=</span><span class="st">&#39;plasma&#39;</span>).set_title(<span class="st">&#39;Age Distribution by Target&#39;</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Max Heart Rate vs. Target</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>sns.boxplot(ax<span class="op">=</span>axes[<span class="dv">0</span>, <span class="dv">1</span>], data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;num&#39;</span>, y<span class="op">=</span><span class="st">&#39;thalch&#39;</span>, palette<span class="op">=</span><span class="st">&#39;magma&#39;</span>, hue<span class="op">=</span><span class="st">&#39;num&#39;</span>, legend<span class="op">=</span><span class="va">False</span>).set_title(<span class="st">&#39;Max Heart Rate by Target&#39;</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Chest Pain Type vs. Target</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>cp_plot <span class="op">=</span> sns.countplot(ax<span class="op">=</span>axes[<span class="dv">1</span>, <span class="dv">0</span>], data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;cp&#39;</span>, hue<span class="op">=</span><span class="st">&#39;num&#39;</span>, palette<span class="op">=</span><span class="st">&#39;cividis&#39;</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>cp_plot.set_title(<span class="st">&#39;Chest Pain Type by Target&#39;</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>cp_plot.set_xticks(<span class="bu">range</span>(<span class="bu">len</span>(df[<span class="st">&#39;cp&#39;</span>].unique())))</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>cp_plot.set_xticklabels([<span class="st">&#39;Typical Angina&#39;</span>, <span class="st">&#39;Atypical Angina&#39;</span>, <span class="st">&#39;Non-anginal Pain&#39;</span>, <span class="st">&#39;Asymptomatic&#39;</span>])</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Sex vs. Target</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>sex_plot <span class="op">=</span> sns.countplot(ax<span class="op">=</span>axes[<span class="dv">1</span>, <span class="dv">1</span>], data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;sex&#39;</span>, hue<span class="op">=</span><span class="st">&#39;num&#39;</span>, palette<span class="op">=</span><span class="st">&#39;inferno&#39;</span>)</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>sex_plot.set_title(<span class="st">&#39;Sex by Target&#39;</span>)</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>sex_plot.set_xticks(<span class="bu">range</span>(<span class="bu">len</span>(df[<span class="st">&#39;sex&#39;</span>].unique())))</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>sex_plot.set_xticklabels([<span class="st">&#39;Female&#39;</span>, <span class="st">&#39;Male&#39;</span>])</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>plt.tight_layout(rect<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.96</span>])</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_add7b0b1acaa47e0933e9cbf93f50950/d253abdba9cd7dbc43ca804687005e79bb7db6e9.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="feature_analysis_summary">
+<p><strong>Insights:</strong></p>
+<ul>
+<li><strong>Max Heart Rate (<code>thalach</code>):</strong> Patients
+with heart disease tend to have a lower maximum heart rate.</li>
+<li><strong>Chest Pain (<code>cp</code>):</strong> Patients with chest
+pain types 1 and 2 (Atypical and Non-anginal) are more likely to have
+heart disease. Surprisingly, those with type 0 (Typical Angina) are less
+likely, and those with asymptomatic pain (type 3) are very likely to
+have the disease.</li>
+<li><strong>Sex:</strong> A higher proportion of females in this dataset
+have heart disease compared to males.</li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+data-executionInfo="{&quot;elapsed&quot;:625,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599776474,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="correlation_code"
+data-outputId="d4592b1e-3d14-4230-cac4-97b2bb88447f">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation Heatmap</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">16</span>, <span class="dv">12</span>))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Select only numerical columns for correlation calculation</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>numerical_df <span class="op">=</span> df.select_dtypes(include<span class="op">=</span>np.number)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>sns.heatmap(numerical_df.corr(), annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, fmt<span class="op">=</span><span class="st">&#39;.2f&#39;</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Correlation Matrix of Numerical Features&#39;</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_add7b0b1acaa47e0933e9cbf93f50950/b6bbe6e6cda4cb106ffa84035a12cc6a36a84b56.png" /></p>
+</div>
+</div>
+<section id="step-3-data-preprocessing" class="cell markdown"
+id="preprocessing_markdown">
+<h3>Step 3: Data Preprocessing</h3>
+<p>Even though the data is clean, we need to prepare it for our models.
+This involves:</p>
+<ol>
+<li><strong>Separating features (X) and target (y).</strong></li>
+<li><strong>Identifying categorical features</strong> that need to be
+encoded.</li>
+<li><strong>One-Hot Encoding</strong> categorical features to convert
+them into a numerical format.</li>
+<li><strong>Scaling numerical features</strong> so they are on a similar
+scale.</li>
+</ol>
+</section>
+<section id="theoretical-concept-scikit-learn-pipelines"
+class="cell markdown" id="HjVVXv-veLpM">
+<h2><strong>Theoretical Concept: Scikit-Learn Pipelines</strong></h2>
+<p>A <strong>Pipeline</strong> in Scikit-Learn is a way to automate a
+machine learning workflow. It allows you to chain together multiple
+steps, such as preprocessing, dimensionality reduction, and model
+training, into a single object.</p>
+<p><strong>Why use Pipelines?</strong></p>
+<ol>
+<li><strong>Convenience:</strong> Simplifies the code and makes the
+workflow easier to manage.</li>
+<li><strong>Prevents Data Leakage:</strong> Ensures that data
+preprocessing steps learned from the training data are applied only to
+the training data, and the same transformations are then applied to the
+test data <em>after</em> the split. This prevents information from the
+test set from "leaking" into the training process.</li>
+<li><strong>Cleaner Code:</strong> Organizes steps logically, making the
+code more readable and maintainable.</li>
+<li><strong>Simplified Hyperparameter Tuning:</strong> Makes it easier
+to tune hyperparameters for all steps in the pipeline using techniques
+like cross-validation.</li>
+</ol>
+<p>In this project, we'll use a pipeline to combine our preprocessing
+steps (imputation, scaling, and one-hot encoding) with our
+classification models.</p>
+</section>
+<div class="cell code" data-execution_count="9" id="split_data_code">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define features (X) and target (y)</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">&#39;num&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">&#39;num&#39;</span>]</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop the &#39;id&#39; and &#39;dataset&#39; columns as they are not features</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> X.drop([<span class="st">&#39;id&#39;</span>, <span class="st">&#39;dataset&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify categorical and numerical features</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>categorical_features <span class="op">=</span> [<span class="st">&#39;sex&#39;</span>, <span class="st">&#39;cp&#39;</span>, <span class="st">&#39;fbs&#39;</span>, <span class="st">&#39;restecg&#39;</span>, <span class="st">&#39;exang&#39;</span>, <span class="st">&#39;slope&#39;</span>, <span class="st">&#39;thal&#39;</span>]</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>numerical_features <span class="op">=</span> [<span class="st">&#39;age&#39;</span>, <span class="st">&#39;trestbps&#39;</span>, <span class="st">&#39;chol&#39;</span>, <span class="st">&#39;thalach&#39;</span>, <span class="st">&#39;oldpeak&#39;</span>, <span class="st">&#39;ca&#39;</span>]</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Create preprocessing pipelines for numerical and categorical features</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>numerical_transformer <span class="op">=</span> Pipeline(steps<span class="op">=</span>[</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;imputer&#39;</span>, SimpleImputer(strategy<span class="op">=</span><span class="st">&#39;mean&#39;</span>)),</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;scaler&#39;</span>, StandardScaler())</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>categorical_transformer <span class="op">=</span> Pipeline(steps<span class="op">=</span>[</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;imputer&#39;</span>, SimpleImputer(strategy<span class="op">=</span><span class="st">&#39;most_frequent&#39;</span>)), <span class="co"># Added imputation for categorical features</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;onehot&#39;</span>, OneHotEncoder(drop<span class="op">=</span><span class="st">&#39;first&#39;</span>, handle_unknown<span class="op">=</span><span class="st">&#39;ignore&#39;</span>))</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a column transformer to apply different transformations to different columns</span></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>preprocessor <span class="op">=</span> ColumnTransformer(</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    transformers<span class="op">=</span>[</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>        (<span class="st">&#39;num&#39;</span>, numerical_transformer, numerical_features),</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>        (<span class="st">&#39;cat&#39;</span>, categorical_transformer, categorical_features)])</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Split data into training and testing sets</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>, stratify<span class="op">=</span>y)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="Rb_mK8CvEWaA">
+<ul>
+<li>Create numerical preprocessing pipeline: A Pipeline is created to
+handle numerical features. It first uses SimpleImputer with the strategy
+'mean' to fill in missing numerical values with the mean of the column,
+and then uses StandardScaler to scale the numerical features to have
+zero mean and unit variance.</li>
+<li>Create categorical preprocessing pipeline: A Pipeline is created for
+categorical features. It uses SimpleImputer with the strategy
+'most_frequent' to fill in missing categorical values with the most
+frequent value, and then applies OneHotEncoder to convert categorical
+variables into a numerical format. drop='first' is used to avoid
+multicollinearity, and handle_unknown='ignore' allows the model to
+handle unseen categories during testing.</li>
+</ul>
+</div>
+<section id="step-4-model-building--training" class="cell markdown"
+id="modeling_markdown">
+<h3>Step 4: Model Building &amp; Training</h3>
+<p>We will build two models and wrap them in a Scikit-Learn Pipeline.
+The pipeline will automatically apply our preprocessing steps to the
+data before training the model.</p>
+</section>
+<section id="theoretical-concept-classification-models"
+class="cell markdown" id="VjWE6f1eIabA">
+<h4><strong>Theoretical Concept: Classification Models</strong></h4>
+<p>Let's dive into more detail on the classification models we are
+using:</p>
+<ul>
+<li><p><strong>Logistic Regression:</strong> Logistic Regression is a
+<strong>linear classification algorithm</strong> used for binary
+classification problems (though it can be extended for multiclass).
+Despite the name "regression," it's a classification method. It works by
+using a <strong>sigmoid (or logistic) function</strong> to map the
+output of a linear equation (<code>wTx + b</code>) to a probability
+value between 0 and 1. This probability represents the likelihood that a
+given data point belongs to a specific class (e.g., the positive class).
+A threshold (commonly 0.5) is then applied to these probabilities to
+assign the class label. The model learns the optimal weights
+(<code>w</code>) and bias (<code>b</code>) that define a linear decision
+boundary to separate the classes.</p></li>
+<li><p><strong>Random Forest:</strong> Random Forest is an
+<strong>ensemble learning method</strong> that belongs to the tree-based
+models. It builds a large number of <strong>decision trees</strong>
+during training. Each tree is trained on a <strong>random
+subset</strong> of the training data (bootstrapping) and considers only
+a <strong>random subset</strong> of features at each split point. For
+classification, the final prediction is made by taking a
+<strong>majority vote</strong> of the predictions from all individual
+trees. This randomness in building trees helps to reduce
+<strong>variance</strong> and prevent <strong>overfitting</strong>,
+making Random Forests more robust and generally higher performing than a
+single decision tree.</p></li>
+<li><p><strong>Support Vector Machine (SVM):</strong> Support Vector
+Machine is a powerful algorithm that can be used for both linear and
+non-linear classification. The fundamental idea behind SVM is to find
+the <strong>optimal hyperplane</strong> that separates the data points
+of different classes in a high-dimensional space. The "optimal"
+hyperplane is the one that has the <strong>largest margin</strong>
+between the closest data points of the different classes (these points
+are called <strong>support vectors</strong>). For non-linearly separable
+data, SVM uses the <strong>kernel trick</strong> to implicitly map the
+data into a higher-dimensional feature space where a linear separation
+might be possible. Common kernels include the linear kernel, polynomial
+kernel, and Radial Basis Function (RBF) kernel.</p></li>
+<li><p><strong>K-Nearest Neighbors (KNN):</strong> K-Nearest Neighbors
+is a simple and intuitive <strong>instance-based</strong> or
+<strong>lazy learning</strong> algorithm. It doesn't learn a
+discriminative function from the training data during a training phase.
+Instead, it memorizes the training dataset. To classify a new, unseen
+data point, it calculates the <strong>distance</strong> (e.g., Euclidean
+distance) between this new point and all points in the training dataset.
+It then identifies the <strong>'k' nearest data points</strong>. The
+class label assigned to the new point is determined by the
+<strong>majority class</strong> among these 'k' nearest neighbors. The
+choice of 'k' and the distance metric are important hyperparameters that
+can significantly affect performance.</p></li>
+</ul>
+</section>
+<section id="41-model-1-logistic-regression-baseline"
+class="cell markdown" id="model_lr_markdown">
+<h4>4.1 Model 1: Logistic Regression (Baseline)</h4>
+</section>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:81,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599781974,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="lr_code" data-outputId="19c430f6-b463-463d-ce79-b27280314324">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, OneHotEncoder</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify categorical and numerical features directly from X_train columns</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>all_features <span class="op">=</span> X_train.columns.tolist()</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>categorical_features <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> all_features <span class="cf">if</span> X_train[col].dtype <span class="op">==</span> <span class="st">&#39;object&#39;</span>]</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>numerical_features <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> all_features <span class="cf">if</span> X_train[col].dtype <span class="op">!=</span> <span class="st">&#39;object&#39;</span>]</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Numerical features:&quot;</span>, numerical_features)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Categorical features:&quot;</span>, categorical_features)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Create preprocessing pipelines for numerical and categorical features</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>numerical_transformer <span class="op">=</span> Pipeline(steps<span class="op">=</span>[</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;imputer&#39;</span>, SimpleImputer(strategy<span class="op">=</span><span class="st">&#39;mean&#39;</span>)),</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;scaler&#39;</span>, StandardScaler())</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>categorical_transformer <span class="op">=</span> Pipeline(steps<span class="op">=</span>[</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;onehot&#39;</span>, OneHotEncoder(drop<span class="op">=</span><span class="st">&#39;first&#39;</span>, handle_unknown<span class="op">=</span><span class="st">&#39;ignore&#39;</span>))</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a column transformer to apply different transformations to different columns</span></span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>preprocessor <span class="op">=</span> ColumnTransformer(</span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>    transformers<span class="op">=</span>[</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>        (<span class="st">&#39;num&#39;</span>, numerical_transformer, numerical_features),</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>        (<span class="st">&#39;cat&#39;</span>, categorical_transformer, categorical_features)])</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the Logistic Regression pipeline</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>lr_pipeline <span class="op">=</span> Pipeline(steps<span class="op">=</span>[(<span class="st">&#39;preprocessor&#39;</span>, preprocessor),</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>                              (<span class="st">&#39;classifier&#39;</span>, LogisticRegression(random_state<span class="op">=</span><span class="dv">42</span>))])</span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>lr_pipeline.fit(X_train, y_train)</span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a>y_pred_lr <span class="op">=</span> lr_pipeline.predict(X_test)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Numerical features: [&#39;age&#39;, &#39;trestbps&#39;, &#39;chol&#39;, &#39;thalch&#39;, &#39;oldpeak&#39;, &#39;ca&#39;]
+Categorical features: [&#39;sex&#39;, &#39;cp&#39;, &#39;fbs&#39;, &#39;restecg&#39;, &#39;exang&#39;, &#39;slope&#39;, &#39;thal&#39;]
+</code></pre>
+</div>
+</div>
+<section id="42-model-2-random-forest-classifier-advanced"
+class="cell markdown" id="model_rf_markdown">
+<h4>4.2 Model 2: Random Forest Classifier (Advanced)</h4>
+</section>
+<div class="cell code" data-execution_count="11" id="rf_code">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>rf_pipeline <span class="op">=</span> Pipeline(steps<span class="op">=</span>[(<span class="st">&#39;preprocessor&#39;</span>, preprocessor),</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                              (<span class="st">&#39;classifier&#39;</span>, RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">100</span>, random_state<span class="op">=</span><span class="dv">42</span>))])</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>rf_pipeline.fit(X_train, y_train)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>y_pred_rf <span class="op">=</span> rf_pipeline.predict(X_test)</span></code></pre></div>
+</div>
+<section id="43-model-3-support-vector-machine-svm"
+class="cell markdown" id="940cc19d">
+<h4>4.3 Model 3: Support Vector Machine (SVM)</h4>
+</section>
+<div class="cell code" data-execution_count="12" id="3b545200">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the SVM pipeline</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>svm_pipeline <span class="op">=</span> Pipeline(steps<span class="op">=</span>[(<span class="st">&#39;preprocessor&#39;</span>, preprocessor),</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>                              (<span class="st">&#39;classifier&#39;</span>, SVC(random_state<span class="op">=</span><span class="dv">42</span>))])</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>svm_pipeline.fit(X_train, y_train)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>y_pred_svm <span class="op">=</span> svm_pipeline.predict(X_test)</span></code></pre></div>
+</div>
+<section id="44-model-4-k-nearest-neighbors-knn" class="cell markdown"
+id="dbd69b78">
+<h4>4.4 Model 4: K-Nearest Neighbors (KNN)</h4>
+</section>
+<div class="cell code" data-execution_count="13" id="46c965d8">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the KNN pipeline</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>knn_pipeline <span class="op">=</span> Pipeline(steps<span class="op">=</span>[(<span class="st">&#39;preprocessor&#39;</span>, preprocessor),</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>                              (<span class="st">&#39;classifier&#39;</span>, KNeighborsClassifier())])</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>knn_pipeline.fit(X_train, y_train)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>y_pred_knn <span class="op">=</span> knn_pipeline.predict(X_test)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="18">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>pip install joblib</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Requirement already satisfied: joblib in /opt/anaconda3/lib/python3.13/site-packages (1.5.2)
+Note: you may need to restart the kernel to use updated packages.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>whos</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Variable                  Type                 Data/Info
+--------------------------------------------------------
+ColumnTransformer         ABCMeta              &lt;class &#39;sklearn.compose._&lt;...&gt;ormer.ColumnTransformer&#39;&gt;
+KNeighborsClassifier      ABCMeta              &lt;class &#39;sklearn.neighbors&lt;...&gt;on.KNeighborsClassifier&#39;&gt;
+LogisticRegression        type                 &lt;class &#39;sklearn.linear_mo&lt;...&gt;stic.LogisticRegression&#39;&gt;
+OneHotEncoder             type                 &lt;class &#39;sklearn.preproces&lt;...&gt;_encoders.OneHotEncoder&#39;&gt;
+Pipeline                  ABCMeta              &lt;class &#39;sklearn.pipeline.Pipeline&#39;&gt;
+RandomForestClassifier    ABCMeta              &lt;class &#39;sklearn.ensemble.&lt;...&gt;.RandomForestClassifier&#39;&gt;
+SVC                       ABCMeta              &lt;class &#39;sklearn.svm._classes.SVC&#39;&gt;
+SimpleImputer             type                 &lt;class &#39;sklearn.impute._base.SimpleImputer&#39;&gt;
+StandardScaler            type                 &lt;class &#39;sklearn.preproces&lt;...&gt;ng._data.StandardScaler&#39;&gt;
+X                         DataFrame            Shape: (920, 13)
+X_test                    DataFrame            Shape: (184, 13)
+X_train                   DataFrame            Shape: (736, 13)
+accuracy_score            function             &lt;function accuracy_score at 0x12b6c89a0&gt;
+all_features              list                 n=13
+axes                      ndarray              2x2: 4 elems, type `object`, 32 bytes
+categorical_features      list                 n=7
+categorical_transformer   Pipeline             Pipeline(steps=[(&#39;onehot&#39;&lt;...&gt;ndle_unknown=&#39;ignore&#39;))])
+classification_report     function             &lt;function classification_report at 0x12b6c9d00&gt;
+cm                        ndarray              5x5: 25 elems, type `int64`, 200 bytes
+confusion_matrix          function             &lt;function confusion_matrix at 0x12b6c8ae0&gt;
+cp_plot                   Axes                 Axes(0.0375154,0.041627;0.458318x0.405903)
+df                        DataFrame            Shape: (920, 16)
+f1_score                  function             &lt;function f1_score at 0x12b6c9260&gt;
+feature_importance_df     DataFrame            Shape: (10, 2)
+feature_names             ndarray              23: 23 elems, type `object`, 184 bytes
+fig                       Figure               Figure(1800x1400)
+file_path                 str                  /Users/roshankumar/.cache&lt;...&gt;s/6/heart_disease_uci.csv
+importances               ndarray              23: 23 elems, type `float64`, 184 bytes
+joblib                    module               &lt;module &#39;joblib&#39; from &#39;/o&lt;...&gt;ages/joblib/__init__.py&#39;&gt;
+kagglehub                 module               &lt;module &#39;kagglehub&#39; from &lt;...&gt;s/kagglehub/__init__.py&#39;&gt;
+knn_pipeline              Pipeline             Pipeline(steps=[(&#39;preproc&lt;...&gt;KNeighborsClassifier())])
+lr_pipeline               Pipeline             Pipeline(steps=[(&#39;preproc&lt;...&gt;ssion(random_state=42))])
+np                        module               &lt;module &#39;numpy&#39; from &#39;/op&lt;...&gt;kages/numpy/__init__.py&#39;&gt;
+numerical_df              DataFrame            Shape: (920, 8)
+numerical_features        list                 n=6
+numerical_transformer     Pipeline             Pipeline(steps=[(&#39;imputer&lt;...&gt;ler&#39;, StandardScaler())])
+path                      str                  /Users/roshankumar/.cache&lt;...&gt;t-disease-data/versions/6
+pd                        module               &lt;module &#39;pandas&#39; from &#39;/o&lt;...&gt;ages/pandas/__init__.py&#39;&gt;
+plt                       module               &lt;module &#39;matplotlib.pyplo&lt;...&gt;es/matplotlib/pyplot.py&#39;&gt;
+precision_score           function             &lt;function precision_score at 0x12b6c9940&gt;
+preprocessor              ColumnTransformer    ColumnTransformer(transfo&lt;...&gt;      &#39;slope&#39;, &#39;thal&#39;])])
+recall_score              function             &lt;function recall_score at 0x12b6c9a80&gt;
+rf_pipeline               Pipeline             Pipeline(steps=[(&#39;preproc&lt;...&gt;ifier(random_state=42))])
+sex_plot                  Axes                 Axes(0.533349,0.041627;0.458318x0.405903)
+sns                       module               &lt;module &#39;seaborn&#39; from &#39;/&lt;...&gt;ges/seaborn/__init__.py&#39;&gt;
+svm_pipeline              Pipeline             Pipeline(steps=[(&#39;preproc&lt;...&gt;, SVC(random_state=42))])
+train_test_split          function             &lt;function train_test_split at 0x12b745a80&gt;
+y                         Series               Shape: (920,)
+y_pred_knn                ndarray              184: 184 elems, type `int64`, 1472 bytes
+y_pred_lr                 ndarray              184: 184 elems, type `int64`, 1472 bytes
+y_pred_rf                 ndarray              184: 184 elems, type `int64`, 1472 bytes
+y_pred_svm                ndarray              184: 184 elems, type `int64`, 1472 bytes
+y_test                    Series               Shape: (184,)
+y_train                   Series               Shape: (736,)
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> joblib</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>joblib.dump(lr_pipeline, <span class="st">&#39;log_reg_model.pkl&#39;</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>joblib.dump(rf_pipeline, <span class="st">&#39;rf_model.pkl&#39;</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>joblib.dump(svm_pipeline, <span class="st">&#39;svm_model.pkl&#39;</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>joblib.dump(knn_pipeline, <span class="st">&#39;knn_model.pkl&#39;</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;✅ All 4 models saved successfully!&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>✅ All 4 models saved successfully!
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> joblib</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>joblib.dump(model1, <span class="st">&#39;log_reg_model.pkl&#39;</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>joblib.dump(model2, <span class="st">&#39;rf_model.pkl&#39;</span>)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>joblib.dump(model3, <span class="st">&#39;svm_model.pkl&#39;</span>)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>joblib.dump(model4, <span class="st">&#39;xgb_model.pkl&#39;</span>)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;✅ All models saved successfully!&quot;</span>)</span></code></pre></div>
+<div class="output error" data-ename="NameError"
+data-evalue="name &#39;model1&#39; is not defined">
+<pre><code>---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[19], line 3
+      1 import joblib
+----&gt; 3 joblib.dump(model1, &#39;log_reg_model.pkl&#39;)
+      4 joblib.dump(model2, &#39;rf_model.pkl&#39;)
+      5 joblib.dump(model3, &#39;svm_model.pkl&#39;)
+
+NameError: name &#39;model1&#39; is not defined
+</code></pre>
+</div>
+</div>
+<section id="step-5-model-evaluation" class="cell markdown"
+id="evaluation_markdown">
+<h3>Step 5: Model Evaluation</h3>
+</section>
+<section id="theoretical-concept-the-confusion-matrix--key-metrics"
+class="cell markdown" id="theory_metrics">
+<h4><strong>Theoretical Concept: The Confusion Matrix &amp; Key
+Metrics</strong></h4>
+<p>For classification, accuracy isn't the whole story. We use a
+<strong>Confusion Matrix</strong> to get a deeper look at
+performance.</p>
+<ul>
+<li><strong>True Positives (TP):</strong> Correctly predicted positive
+class (Model said 'Disease', patient has it).</li>
+<li><strong>True Negatives (TN):</strong> Correctly predicted negative
+class (Model said 'No Disease', patient doesn't have it).</li>
+<li><strong>False Positives (FP):</strong> Incorrectly predicted
+positive class (Model said 'Disease', but patient doesn't have it). Also
+called a <strong>Type I Error</strong>.</li>
+<li><strong>False Negatives (FN):</strong> Incorrectly predicted
+negative class (Model said 'No Disease', but patient has it). Also
+called a <strong>Type II Error</strong>. This is often the most
+dangerous type of error in medical diagnoses.</li>
+</ul>
+<p>From this, we derive key metrics:</p>
+<ul>
+<li><strong>Accuracy:</strong> (TP+TN) / Total. Overall, how often is
+the classifier correct?</li>
+<li><strong>Precision:</strong> TP / (TP+FP). Of all patients the model
+<em>predicted</em> would have the disease, how many actually did?
+(Measures the cost of FPs).</li>
+<li><strong>Recall (Sensitivity):</strong> TP / (TP+FN). Of all the
+patients who <em>actually</em> had the disease, how many did the model
+correctly identify? (Measures the cost of FNs).</li>
+<li><strong>F1-Score:</strong> The harmonic mean of Precision and
+Recall. It's a great single metric for evaluating a model's overall
+performance when there's a trade-off between Precision and Recall.</li>
+</ul>
+</section>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:48,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599790248,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="evaluation_code"
+data-outputId="89c02b07-96a1-45a8-db29-7f3bf5023b71">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Logistic Regression Performance ---&quot;</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred_lr, zero_division<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- Random Forest Performance ---&quot;</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred_rf, zero_division<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- Support Vector Machine (SVM) Performance ---&quot;</span>)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred_svm, zero_division<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- K-Nearest Neighbors (KNN) Performance ---&quot;</span>)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred_knn, zero_division<span class="op">=</span><span class="dv">0</span>))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--- Logistic Regression Performance ---
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.83        82
+           1       0.49      0.57      0.53        53
+           2       0.30      0.14      0.19        22
+           3       0.16      0.19      0.17        21
+           4       0.00      0.00      0.00         6
+
+    accuracy                           0.58       184
+   macro avg       0.35      0.35      0.34       184
+weighted avg       0.55      0.58      0.56       184
+
+
+--- Random Forest Performance ---
+              precision    recall  f1-score   support
+
+           0       0.76      0.87      0.81        82
+           1       0.52      0.55      0.53        53
+           2       0.27      0.18      0.22        22
+           3       0.15      0.14      0.15        21
+           4       0.00      0.00      0.00         6
+
+    accuracy                           0.58       184
+   macro avg       0.34      0.35      0.34       184
+weighted avg       0.54      0.58      0.56       184
+
+
+--- Support Vector Machine (SVM) Performance ---
+              precision    recall  f1-score   support
+
+           0       0.76      0.87      0.81        82
+           1       0.54      0.60      0.57        53
+           2       0.29      0.09      0.14        22
+           3       0.12      0.14      0.13        21
+           4       0.00      0.00      0.00         6
+
+    accuracy                           0.59       184
+   macro avg       0.34      0.34      0.33       184
+weighted avg       0.54      0.59      0.56       184
+
+
+--- K-Nearest Neighbors (KNN) Performance ---
+              precision    recall  f1-score   support
+
+           0       0.74      0.85      0.80        82
+           1       0.54      0.60      0.57        53
+           2       0.11      0.05      0.06        22
+           3       0.19      0.19      0.19        21
+           4       0.00      0.00      0.00         6
+
+    accuracy                           0.58       184
+   macro avg       0.32      0.34      0.32       184
+weighted avg       0.52      0.58      0.55       184
+
+</code></pre>
+</div>
+</div>
+<section id="step-7-conclusion" class="cell markdown" id="f921e862">
+<h3>Step 7: Conclusion</h3>
+<p>In this project, we built classification models for predicting heart
+disease.</p>
+<p><strong>Key Steps Undertaken:</strong></p>
+<ol>
+<li><strong>Established the goal of classification:</strong> Predicting
+a binary outcome (disease or no disease).</li>
+<li><strong>Performed a thorough EDA:</strong> Identified key medical
+indicators like chest pain type, max heart rate, and <code>ca</code>
+that are strongly related to the target.</li>
+<li><strong>Built a robust preprocessing pipeline:</strong> Handled
+categorical and numerical features systematically using
+<code>ColumnTransformer</code> and <code>Pipeline</code>.</li>
+<li><strong>Trained and compared four models:</strong> Evaluated
+Logistic Regression, Random Forest, Support Vector Machine (SVM), and
+K-Nearest Neighbors (KNN). The evaluation showed that the Support Vector
+Machine (SVM) performed slightly better than the other models in this
+analysis.</li>
+<li><strong>Evaluated models with proper metrics:</strong> Used the
+confusion matrix, precision, and recall to understand the model's
+performance in a medical context, where minimizing false negatives is
+critical.</li>
+<li><strong>Interpreted model results:</strong> Used feature importance
+(from the Random Forest model as an example) to confirm some of the most
+predictive medical factors, providing actionable insights.</li>
+</ol>
+<p>This end-to-end workflow demonstrates the application of
+classification in a real-world healthcare scenario, moving from raw data
+to predictive models and their evaluation.</p>
+</section>
+<div class="cell markdown" id="73663d3f">
+<p><strong>Evaluation Insight:</strong> The Support Vector Machine (SVM)
+Classifier performs slightly better than the other models, achieving an
+overall accuracy of 0.59. While all models struggle with the less
+frequent classes (2, 3, and 4), SVM shows a slightly better F1-score for
+predicting class 1 (Heart Disease). The confusion matrix provided was
+for the Random Forest model, which showed good performance on classes 0
+and 1 but also struggled with the less frequent classes. Based on the
+classification reports, SVM is the best performing model among the four
+in this evaluation.</p>
+</div>
+<div class="cell code" data-execution_count="15"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+data-executionInfo="{&quot;elapsed&quot;:352,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1757599793292,&quot;user&quot;:{&quot;displayName&quot;:&quot;Harshvardhan Singh&quot;,&quot;userId&quot;:&quot;01021206035258477392&quot;},&quot;user_tz&quot;:-330}"
+id="confusion_matrix_code"
+data-outputId="c377d3c6-ff2c-4e55-81fa-cf597fbc0c51">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize the confusion matrix for the best model (SVM)</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, y_pred_svm)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">&#39;d&#39;</span>, cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">&#39;No Disease&#39;</span>, <span class="st">&#39;Disease&#39;</span>, <span class="st">&#39;Severity 2&#39;</span>, <span class="st">&#39;Severity 3&#39;</span>, <span class="st">&#39;Severity 4&#39;</span>], yticklabels<span class="op">=</span>[<span class="st">&#39;No Disease&#39;</span>, <span class="st">&#39;Disease&#39;</span>, <span class="st">&#39;Severity 2&#39;</span>, <span class="st">&#39;Severity 3&#39;</span>, <span class="st">&#39;Severity 4&#39;</span>])</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Actual&#39;</span>)</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Confusion Matrix - Support Vector Machine (SVM)&#39;</span>)</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_add7b0b1acaa47e0933e9cbf93f50950/f8d75129c3f5d59ace75f052136ce5815e05327f.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="c4004d05">
+
+</div>
+<div class="cell markdown" id="f7ec24e1">
+<p><strong>Insight:</strong> This feature importance analysis, derived
+from the Random Forest model, shows that <code>ca</code> (number of
+major vessels colored by flourosopy), <code>thalach</code> (max heart
+rate), <code>thal</code> (thalassemia type), and <code>cp</code> (chest
+pain type) are among the most important predictors. This aligns with our
+EDA and medical intuition, confirming that these factors are critical
+for diagnosing heart disease. This is provided as an example of feature
+importance, even though the SVM model performed slightly better
+overall.</p>
+</div>
+<div class="cell markdown" id="evaluation_summary">
+<p><strong>Evaluation Insight:</strong> The Random Forest Classifier
+performs exceptionally well, achieving near-perfect scores across the
+board (Accuracy, Precision, Recall, and F1-Score are all 99-100%). It
+significantly outperforms the Logistic Regression model. The confusion
+matrix shows it made only one error on the test set.</p>
+</div>
+<section id="step-6-feature-importance" class="cell markdown"
+id="feature_importance_markdown">
+<h3>Step 6: Feature Importance</h3>
+<p>A major advantage of tree-based models like Random Forest is that we
+can easily see which features were most influential in making
+predictions.</p>
+</section>
+<div class="cell code" data-execution_count="16"
+id="feature_importance_code">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract feature names after one-hot encoding</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>feature_names <span class="op">=</span> rf_pipeline.named_steps[<span class="st">&#39;preprocessor&#39;</span>].get_feature_names_out()</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get feature importances from the trained model</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>importances <span class="op">=</span> rf_pipeline.named_steps[<span class="st">&#39;classifier&#39;</span>].feature_importances_</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a DataFrame for visualization</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>feature_importance_df <span class="op">=</span> pd.DataFrame({<span class="st">&#39;Feature&#39;</span>: feature_names, <span class="st">&#39;Importance&#39;</span>: importances})</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>feature_importance_df <span class="op">=</span> feature_importance_df.sort_values(by<span class="op">=</span><span class="st">&#39;Importance&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Importance&#39;</span>, y<span class="op">=</span><span class="st">&#39;Feature&#39;</span>, data<span class="op">=</span>feature_importance_df, palette<span class="op">=</span><span class="st">&#39;rocket&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Feature&#39;</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Top 10 Most Important Features - Random Forest&#39;</span>)</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_add7b0b1acaa47e0933e9cbf93f50950/35ec3da8ec3a9d5e8941f6f75d2cee2b901b26ca.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="feature_importance_summary">
+<p><strong>Insight:</strong> The model found that <code>ca</code>
+(number of major vessels colored by flourosopy), <code>thalach</code>
+(max heart rate), <code>thal</code> (thalassemia type), and
+<code>cp</code> (chest pain type) are among the most important
+predictors. This aligns with our EDA and medical intuition, confirming
+that these factors are critical for diagnosing heart disease.</p>
+</div>
+<section id="step-7-conclusion" class="cell markdown"
+id="conclusion_markdown">
+<h3>Step 7: Conclusion</h3>
+<p>In this project, we built a highly accurate classification model for
+predicting heart disease.</p>
+<p><strong>Key Steps Undertaken:</strong></p>
+<ol>
+<li><strong>Established the goal of classification:</strong> Predicting
+a binary outcome (disease or no disease).</li>
+<li><strong>Performed a thorough EDA:</strong> Identified key medical
+indicators like chest pain type, max heart rate, and <code>ca</code>
+that are strongly related to the target.</li>
+<li><strong>Built a robust preprocessing pipeline:</strong> Handled
+categorical and numerical features systematically using
+<code>ColumnTransformer</code> and <code>Pipeline</code>.</li>
+<li><strong>Trained and compared two models:</strong> Showed that the
+Random Forest Classifier (99% accuracy) was far superior to the Logistic
+Regression baseline (86% accuracy).</li>
+<li><strong>Evaluated models with proper metrics:</strong> Used the
+confusion matrix, precision, and recall to understand the model's
+performance in a medical context, where minimizing false negatives is
+critical.</li>
+<li><strong>Interpreted model results:</strong> Used feature importance
+to confirm the most predictive medical factors, providing actionable
+insights.</li>
+</ol>
+<p>This end-to-end workflow demonstrates the power of classification in
+a real-world healthcare scenario, moving from raw data to a highly
+accurate and interpretable predictive model.</p>
+</section>
+<section id="submission-criteria" class="cell markdown"
+id="Wfy6DV6Xn7rJ">
+<h3>Submission Criteria</h3>
+<p>To fulfill the submission requirements for this project, please
+ensure the following:</p>
+<ol>
+<li><strong>Complete Exploratory Data Analysis (EDA):</strong> Perform
+all the necessary steps for analyzing the dataset, including
+visualizations and summaries to understand the data characteristics and
+relationships.</li>
+<li><strong>Model Training without Pipelines:</strong> Train at least
+one classification model directly, without using the Scikit-Learn
+<code>Pipeline</code> object for preprocessing and model chaining. This
+involves manually applying preprocessing steps (like imputation and
+scaling/encoding) to the data before training the model.</li>
+<li><strong>Submit the Entire Notebook:</strong> Ensure that the final
+submission includes the complete Colab notebook with all code cells
+executed and outputs visible.</li>
+</ol>
+<p>Meeting these criteria will demonstrate your understanding of the
+individual steps involved in a machine learning workflow.</p>
+</section>
+<div class="cell code" id="8C-BVqIb2e8r">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="12">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, OneHotEncoder</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="13">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>all_features <span class="op">=</span> X_train.columns.tolist()</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>categorical_features <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> all_features <span class="cf">if</span> X_train[col].dtype <span class="op">==</span> <span class="st">&#39;object&#39;</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>numerical_features <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> all_features <span class="cf">if</span> X_train[col].dtype <span class="op">!=</span> <span class="st">&#39;object&#39;</span>]</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Numerical features:&quot;</span>, numerical_features)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Categorical features:&quot;</span>, categorical_features)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Numerical features: [&#39;age&#39;, &#39;trestbps&#39;, &#39;chol&#39;, &#39;thalch&#39;, &#39;oldpeak&#39;, &#39;ca&#39;]
+Categorical features: [&#39;sex&#39;, &#39;cp&#39;, &#39;fbs&#39;, &#39;restecg&#39;, &#39;exang&#39;, &#39;slope&#39;, &#39;thal&#39;]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="14">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>num_imputer <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">&#39;mean&#39;</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>X_train_num <span class="op">=</span> num_imputer.fit_transform(X_train[numerical_features])</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>X_test_num <span class="op">=</span> num_imputer.transform(X_test[numerical_features])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="15">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>cat_imputer <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">&#39;most_frequent&#39;</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>X_train_cat <span class="op">=</span> cat_imputer.fit_transform(X_train[categorical_features])</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>X_test_cat <span class="op">=</span> cat_imputer.transform(X_test[categorical_features])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="16">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>X_train_num_scaled <span class="op">=</span> scaler.fit_transform(X_train_num)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>X_test_num_scaled <span class="op">=</span> scaler.transform(X_test_num)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="17">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>encoder <span class="op">=</span> OneHotEncoder(drop<span class="op">=</span><span class="st">&#39;first&#39;</span>, handle_unknown<span class="op">=</span><span class="st">&#39;ignore&#39;</span>, sparse_output<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>X_train_cat_encoded <span class="op">=</span> encoder.fit_transform(X_train_cat)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>X_test_cat_encoded <span class="op">=</span> encoder.transform(X_test_cat)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="18">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>X_train_processed <span class="op">=</span> np.hstack([X_train_num_scaled, X_train_cat_encoded])</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>X_test_processed <span class="op">=</span> np.hstack([X_test_num_scaled, X_test_cat_encoded])</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>lr <span class="op">=</span> LogisticRegression(random_state<span class="op">=</span><span class="dv">42</span>, max_iter<span class="op">=</span><span class="dv">1000</span>)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>lr.fit(X_train_processed, y_train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+<style>#sk-container-id-1 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-1 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-1 pre {
+  padding: 0;
+}
+
+#sk-container-id-1 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-1 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-1 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-1 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-1 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-1 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-1 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-1 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-1 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-1 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-1 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-1 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-1 label.sk-toggleable__label {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-1 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
+}
+
+#sk-container-id-1 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-1 div.sk-toggleable__content {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  max-height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-1 div.sk-label label.sk-toggleable__label,
+#sk-container-id-1 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-1 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-1 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-1 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-1 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 0.5em;
+  text-align: center;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-1 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-1 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-1 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-1 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression(max_iter=1000, random_state=42)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>LogisticRegression</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.linear_model.LogisticRegression.html">?<span>Documentation for LogisticRegression</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>LogisticRegression(max_iter=1000, random_state=42)</pre></div> </div></div></div></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Step 6: Predict ---</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>y_pred_lr <span class="op">=</span> lr.predict(X_test_processed)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="21">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Logistic Regression Performance ---&quot;</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, y_pred_lr, zero_division<span class="op">=</span><span class="dv">0</span>))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--- Logistic Regression Performance ---
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.83        82
+           1       0.46      0.57      0.51        53
+           2       0.38      0.14      0.20        22
+           3       0.22      0.24      0.23        21
+           4       0.00      0.00      0.00         6
+
+    accuracy                           0.59       184
+   macro avg       0.37      0.36      0.35       184
+weighted avg       0.56      0.59      0.57       184
+
+</code></pre>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>

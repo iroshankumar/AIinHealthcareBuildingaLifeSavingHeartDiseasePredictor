@@ -1,0 +1,333 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Predictor</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; background-color: #f4f6f8; }
+        form { background: white; padding: 25px; border-radius: 10px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, select { margin: 8px; padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        h3 { color: #333; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Heart Disease Prediction App</h2>
+    <form action="/predict" method="post">
+        <label for="model">Choose Model:</label><br>
+        <select name="model" required>
+            <option value="">--Select Model--</option>
+            {% for model in model_names %}
+            <option value="{{ model }}">{{ model }}</option>
+            {% endfor %}
+        </select><br>
+
+        <input type="number" name="age" placeholder="Age" required><br>
+        <input type="number" name="sex" placeholder="Sex (1=Male, 0=Female)" required><br>
+        <input type="number" name="cp" placeholder="Chest Pain Type" required><br>
+        <input type="number" name="trestbps" placeholder="Resting BP" required><br>
+        <input type="number" name="chol" placeholder="Cholesterol" required><br>
+        <input type="number" name="fbs" placeholder="Fasting Blood Sugar" required><br>
+        <input type="number" name="restecg" placeholder="Rest ECG" required><br>
+        <input type="number" name="thalach" placeholder="Max Heart Rate" required><br>
+        <input type="number" name="exang" placeholder="Exercise Induced Angina" required><br>
+        <input type="number" name="oldpeak" placeholder="Oldpeak" required><br>
+        <input type="number" name="slope" placeholder="Slope" required><br>
+        <input type="number" name="ca" placeholder="CA" required><br>
+        <input type="number" name="thal" placeholder="Thal" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Prediction</title>
+  <style>
+    /* === Global Styles === */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #80deea, #26c6da);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* === Card Container === */
+    .card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      padding: 40px;
+      width: 400px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #00796b;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* === Form Styles === */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    input, select {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #b2dfdb;
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.2s ease;
+      font-size: 14px;
+    }
+
+    input:focus, select:focus {
+      border-color: #26a69a;
+      box-shadow: 0 0 6px rgba(38, 166, 154, 0.5);
+    }
+
+    button {
+      background-color: #26a69a;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      width: 60%;
+    }
+
+    button:hover {
+      background-color: #00796b;
+      transform: scale(1.05);
+    }
+
+    /* === Result Text === */
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #e0f2f1;
+      color: #004d40;
+      font-weight: bold;
+      font-size: 16px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === Footer === */
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>💓 Heart Disease Predictor</h2>
+    <form action="/predict" method="post">
+      <select name="model" required>
+        <option value="">🧠 Choose Model</option>
+        {% for model in model_names %}
+        <option value="{{ model }}">{{ model }}</option>
+        {% endfor %}
+      </select>
+
+      <input type="number" name="age" placeholder="Age" required>
+      <input type="number" name="sex" placeholder="Sex (1=Male, 0=Female)" required>
+      <input type="number" name="cp" placeholder="Chest Pain Type" required>
+      <input type="number" name="trestbps" placeholder="Resting Blood Pressure" required>
+      <input type="number" name="chol" placeholder="Cholesterol" required>
+      <input type="number" name="fbs" placeholder="Fasting Blood Sugar" required>
+      <input type="number" name="restecg" placeholder="Rest ECG" required>
+      <input type="number" name="thalach" placeholder="Max Heart Rate" required>
+      <input type="number" name="exang" placeholder="Exercise Induced Angina" required>
+      <input type="number" name="oldpeak" placeholder="Oldpeak" required>
+      <input type="number" name="slope" placeholder="Slope" required>
+      <input type="number" name="ca" placeholder="CA" required>
+      <input type="number" name="thal" placeholder="Thal" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+    <div class="result">{{ prediction_text }}</div>
+    {% endif %}
+
+    <footer>Made with ❤️ using Flask & Machine Learning</footer>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+    <style>
+        body { font-family: Arial; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; }
+        h1 { text-align: center; }
+        label { display: block; margin-top: 10px; }
+        input, select, button { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; }
+        button { margin-top: 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; font-size: 18px; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Heart Disease Prediction</h1>
+    <form method="POST">
+        <label>Select Model:</label>
+        <select name="model_choice" required>
+            {% for model in models %}
+                <option value="{{ model }}">{{ model }}</option>
+            {% endfor %}
+        </select>
+
+        <!-- Numerical Inputs -->
+        <!-- {% for feature in ['age','trestbps','chol','thalch','oldpeak','ca'] %}
+            <label>{{ feature|capitalize }}:</label>
+            <input type="number" step="any" name="{{ feature }}" required>
+        {% endfor %} -->
+          <!-- Example: Age dropdown -->
+          <label>Age:</label>
+          <select name="age" required>
+              {% for a in range(20, 81) %}  <!-- age 20 to 80 -->
+                  <option value="{{ a }}">{{ a }}</option>
+              {% endfor %}
+          </select>
+
+          <label>Resting Blood Pressure (trestbps):</label>
+          <select name="trestbps" required>
+              {% for bp in range(90, 201, 5) %}  <!-- 90 to 200 in steps of 5 -->
+                  <option value="{{ bp }}">{{ bp }}</option>
+              {% endfor %}
+          </select>
+
+          <label>Cholesterol (chol):</label>
+          <select name="chol" required>
+              {% for c in range(100, 401, 10) %}  <!-- 100 to 400 in steps of 10 -->
+                  <option value="{{ c }}">{{ c }}</option>
+              {% endfor %}
+          </select>
+
+          <label>Max Heart Rate (thalch):</label>
+          <select name="thalch" required>
+              {% for hr in range(60, 221, 5) %}  <!-- 60 to 220 in steps of 5 -->
+                  <option value="{{ hr }}">{{ hr }}</option>
+              {% endfor %}
+          </select>
+
+          <label>Oldpeak:</label>
+          <select name="oldpeak" required>
+              {% for op in range(0, 61) %}  <!-- 0 to 6.0 in 0.1 steps -->
+                  <option value="{{ op/10 }}">{{ op/10 }}</option>
+              {% endfor %}
+          </select>
+
+          <label>Number of Major Vessels (ca):</label>
+          <select name="ca" required>
+              {% for vessel in range(0, 5) %}  <!-- 0 to 4 -->
+                  <option value="{{ vessel }}">{{ vessel }}</option>
+              {% endfor %}
+          </select>
+
+
+        <!-- Categorical Inputs -->
+        <label>Sex:</label>
+        <select name="sex" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label>Chest Pain Type (cp):</label>
+        <select name="cp" required>
+            <option value="typical angina">Typical Angina</option>
+            <option value="atypical angina">Atypical Angina</option>
+            <option value="non-anginal">Non-anginal Pain</option>
+            <option value="asymptomatic">Asymptomatic</option>
+        </select>
+
+        <label>Fasting Blood Sugar > 120 mg/dl (fbs):</label>
+        <select name="fbs" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+
+        <label>Resting ECG (restecg):</label>
+        <select name="restecg" required>
+            <option value="normal">Normal</option>
+            <option value="lv hypertrophy">LV Hypertrophy</option>
+        </select>
+
+        <label>Exercise Induced Angina (exang):</label>
+        <select name="exang" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+
+        <label>Slope of ST Segment (slope):</label>
+        <select name="slope" required>
+            <option value="upsloping">Upsloping</option>
+            <option value="flat">Flat</option>
+            <option value="downsloping">Downsloping</option>
+        </select>
+
+        <label>Thalassemia (thal):</label>
+        <select name="thal" required>
+            <option value="normal">Normal</option>
+            <option value="fixed defect">Fixed Defect</option>
+            <option value="reversable defect">Reversable Defect</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            <p><strong>Prediction:</strong> {{ result }}</p>
+            <p><strong>Confidence:</strong> {{ probability }}</p>
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
